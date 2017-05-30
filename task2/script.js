@@ -4,6 +4,16 @@
 // Сортирайте следния списък от числа във възходящ ред:
 var arr = [2, 5, 8, 4, 1, 12];
 
+ 
+function sort(arr) {
+    var sortedString =arr.sort(function(a, b){
+        return a-b;
+    });
+    return sortedString;
+}
+
+console.log(sort(arr))
+
 //...
 
 // задача 2 (4т.)
@@ -47,4 +57,12 @@ var items = [
   }
 ];
 
-// ...
+function total (items) {
+    var sum=0;
+    shoppingCart.forEach(function (a) {
+        sum =sum + (a.price)*(a.quantity);
+    });
+    return sum; 
+}
+
+console.log(total(items));

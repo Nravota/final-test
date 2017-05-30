@@ -39,3 +39,40 @@ ul > li img {
 }
 
 /* Вашият CSS от тук надолу */
+
+
+img {
+    width: 100%;
+}
+
+
+
+@media (min-width: 400px) {
+    ul > li {
+        max-width:100%;
+        width: calc(100%/2);
+
+    }
+
+}
+
+@media (min-width: 1000px) {
+    ul > li {
+        max-width:100%;
+        width: calc(100%);
+    }
+}
+
+@media (min-width: 600px) {
+    ul > li {
+        max-width:100%;
+        width: calc(100%/3);
+    }   
+
+
+}
+
+ul li:nth-child(odd) {
+    background-color: lightblue;
+}
+
